@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <h1>2048</h1>
+  <header>
+    <div class="nav">
+      <div class="score">
+        <div><span class="title">得分:</span><span class="number">0</span></div>
+        <div><span>历史最高:</span><span class="history">0</span></div>
+      </div>
+    </div>
+    <a href="javascript:newgame()" id="newgame">新游戏</a>
+    <div class="over">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary myover" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        结束游戏
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">游戏结束</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              您的最终得分为<span>0</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+              <button type="button" class="btn btn-primary">新游戏</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <div id="grid-container">
+      <div id="grid-cell-0-0" class="grid-cell"></div>
+      <div id="grid-cell-0-1" class="grid-cell"></div>
+      <div id="grid-cell-0-2" class="grid-cell"></div>
+      <div id="grid-cell-0-3" class="grid-cell"></div>
+      <div id="grid-cell-1-0" class="grid-cell"></div>
+      <div id="grid-cell-1-1" class="grid-cell"></div>
+      <div id="grid-cell-1-2" class="grid-cell"></div>
+      <div id="grid-cell-1-3" class="grid-cell"></div>
+      <div id="grid-cell-2-0" class="grid-cell"></div>
+      <div id="grid-cell-2-1" class="grid-cell"></div>
+      <div id="grid-cell-2-2" class="grid-cell"></div>
+      <div id="grid-cell-2-3" class="grid-cell"></div>
+      <div id="grid-cell-3-0" class="grid-cell"></div>
+      <div id="grid-cell-3-1" class="grid-cell"></div>
+      <div id="grid-cell-3-2" class="grid-cell"></div>
+      <div id="grid-cell-3-3" class="grid-cell"></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./function.js"></script>
+  <script src="./event.js"></script>
+</body>
+
+</html>
